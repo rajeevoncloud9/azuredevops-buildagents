@@ -22,6 +22,9 @@ trigger: none
 variables:
   - group: ${{ parameters.variable_group }}
 
+pool:
+  vmImgae: windows-latest
+
 jobs:
 - template: buildagent-generation-template.yml
   parameters: 
